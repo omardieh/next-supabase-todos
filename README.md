@@ -1,5 +1,24 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+1. create new account on supabase
+2. get the url and anon key from supabase
+3. use .env file to store your api credentials
+4. create utilities folder
+5. add supabase.js file
+6. create components folder
+7. add footer and navbar components with styles
+8. import { supabase } & components in \_app
+9. create session with useState and supabase
+
+#database
+
+1. create types folder
+2. npm i supabase@">=1.8.1" --save-dev
+3. Login with your Personal Access Token: (generate it on supabase.com)
+4. npx supabase login
+5. Generate types for your project to produce the types/supabase.ts file:
+6. npx supabase gen types typescript --project-id "$PROJECT_ID" --schema public > types/supabase.ts
+
 ## Getting Started
 
 First, run the development server:
